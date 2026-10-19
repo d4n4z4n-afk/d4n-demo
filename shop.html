@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — AETHER</title>
+  <meta name="description" content="Browse all AETHER electronics and gadgets." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="shop">
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">⚡</span>
+          AETHER
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn btn-icon" aria-label="Cart">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 2H2"/>
+            </svg>
+            <span class="cart-count" style="display:none">0</span>
+          </a>
+          <button class="mobile-menu-btn btn-icon" aria-label="Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <button class="mobile-nav-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="shop.html" class="active">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">All Products</h1>
+      <p class="section-subtitle">Explore our full range of premium electronics</p>
+
+      <div class="shop-header">
+        <div class="shop-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="Audio">Audio</button>
+          <button class="filter-btn" data-category="Wearables">Wearables</button>
+          <button class="filter-btn" data-category="Accessories">Accessories</button>
+          <button class="filter-btn" data-category="Drones">Drones</button>
+          <button class="filter-btn" data-category="VR">VR</button>
+          <button class="filter-btn" data-category="Power">Power</button>
+          <button class="filter-btn" data-category="Display">Display</button>
+          <button class="filter-btn" data-category="Cameras">Cameras</button>
+          <button class="filter-btn" data-category="Tablets">Tablets</button>
+        </div>
+        <select class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+
+      <div class="products-grid" id="shop-products"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">⚡</span>
+            AETHER
+          </a>
+          <p>Premium electronics and gadgets designed for the modern world. Quality you can feel.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html">Audio</a>
+            <a href="shop.html">Wearables</a>
+            <a href="shop.html">Accessories</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 AETHER. All rights reserved.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
